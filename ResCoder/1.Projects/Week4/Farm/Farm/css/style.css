@@ -1,0 +1,138 @@
+/*
+Project Name: The Farm
+Client: Leon Noel
+Author: Lavell Wesley
+Full Stack Developer @RC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-image: url("https://i.imgur.com/aAdmeqp.gif");
+     background-size: 100%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+#bulbasaur, #jigglypuff,#charmander, #psyduck,
+#slowpoke, #pikachu, #snorlax, #magikarp,
+ #donkey, #squirtle, #pidgeot {
+  width: auto;
+  height: 100px;
+  cursor: pointer;
+  transition: all 1s;
+}
+#bulbasaur{
+  position: absolute;
+  top: 150px;
+  left: 400px;
+}
+#charmander{
+  position: absolute;
+  top: 250px;
+  left: 200px;
+}
+#psyduck{
+  position: absolute;
+  top: 350px;
+  left: 600px;
+}
+#jigglypuff{
+  position: absolute;
+  top: 90px;
+  left: 120px;
+}
+#slowpoke{
+  position: absolute;
+  top: 400px;
+  left: 800px;
+}
+#pikachu{
+  position: absolute;
+  top: 650px;
+  left: 200px;
+}
+#snorlax{
+  position: absolute;
+  top: 500px;
+  left: 500px;
+}
+#magikarp{
+  position: absolute;
+  top: 460px;
+  left: 721px;
+}
+#pidgeot{
+  position: absolute;
+  top: 500px;
+  left:50px;
+}
+#squirtle{
+  position: absolute;
+  top: 450px;
+  left: 200px;
+}
+
+header {
+border: 1px solid black;
+text-align: center;
+background-color: RGBa(255,255,255,0.3);
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
