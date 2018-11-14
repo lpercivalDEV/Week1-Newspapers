@@ -15,7 +15,7 @@ function bubbles(arr) {
                 let final = arr;
                 console.log(final);
                 //sort method is printed to the dom so users can see it in action.
-                results.innerHTML = final;
+                results.innerHTML = document.createElement;
             }
         }
 
@@ -46,18 +46,18 @@ input.addEventListener("change", () => {
             //converting array of strings into integers
             for(var i=0; i<hold.length; i++) { hold[i] = +hold[i]; };
 
-            //pushing numerical values to array for bubble sort
-            //temp.push(hold);
+            //saving numerical values in temp for bubble sort
+            temp = hold;
 
             //checking to see if set was converted to integers correctly
-            console.log(hold);
+            console.log(temp);
 
     };
 
     //on click, inputs are processed using makeSet function and then sorted using bubbles function
     goSort.addEventListener("click", function() {
         makeSet();
-        bubbles(hold);
+        bubbles(temp);
         console.log("success!");
     });
 
